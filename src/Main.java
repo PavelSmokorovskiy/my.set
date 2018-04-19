@@ -23,24 +23,20 @@ public class Main {
         System.out.println(set.contains("Значение 1"));
         System.out.println(set.contains("Значение 1"));
         set.add("Значение 11");
+        System.out.println(set.contains("Значение 11"));
         set.add("Значение 12");
-
-
-
-//        System.out.println(set.remove(100));
-//        set.add(100);
-//        set.add(111);
-//        set.add(222);
-
+        System.out.println(set.remove("Значение 8"));
+        set.add(100);
+        set.add(100);
+        set.add(200);
+        System.out.println(set.contains(200));
+        System.out.println(set.contains(200));
+        System.out.println(set.contains(200));
 
         Iterator<MyLimitedSet.Entry> entries = set.iterator();
         while (entries.hasNext()) {
             MyLimitedSet.Entry entry = entries.next();
             System.out.println("Значение: " + entry.value + "  Количество сравнений: " + entry.counter);
         }
-
-
-
-
     }
 }

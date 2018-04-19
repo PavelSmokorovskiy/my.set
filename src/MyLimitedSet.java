@@ -51,7 +51,7 @@ public class MyLimitedSet<T> implements LimitedSet<T> {
     @Override
     public void add(T t) {
 
-        int min = 0;
+        int min = CAPACITY;
         int index = 0;
         boolean contains = false;
 
@@ -61,8 +61,6 @@ public class MyLimitedSet<T> implements LimitedSet<T> {
                 break;
             } else if (min > array[i].counter) {
                 min = array[i].counter;
-                System.out.println(array[0].counter);
-//                System.out.println("min: " + min);
                 index = i;
             }
         }
