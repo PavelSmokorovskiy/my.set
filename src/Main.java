@@ -20,18 +20,18 @@ public class Main {
         set.add("Значение 8");
         set.add("Значение 9");
         set.add("Значение 10");
-        System.out.println(set.contains("Значение 1"));
-        System.out.println(set.contains("Значение 1"));
+        set.contains("Значение 1");
+        set.contains("Значение 1");
         set.add("Значение 11");
-        System.out.println(set.contains("Значение 11"));
+        set.contains("Значение 11");
         set.add("Значение 12");
-        System.out.println(set.remove("Значение 8"));
+        set.remove("Значение 8");
         set.add(100);
         set.add(100);
         set.add(200);
-        System.out.println(set.contains(200));
-        System.out.println(set.contains(200));
-        System.out.println(set.contains(200));
+        set.contains(200);
+        set.contains(200);
+        set.contains(200);
 
         Iterator<MyLimitedSet.Entry> entries = set.iterator();
         while (entries.hasNext()) {
